@@ -9,6 +9,10 @@ class MoviesStore {
   getMovies = () => {
     return this.movies;
   };
+
+  getMovieById = (id) => {
+    return this.movies.find((movie) => movie.id === id);
+  };
 }
 
 export default new MoviesStore();
